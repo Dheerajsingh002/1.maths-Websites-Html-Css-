@@ -1,3 +1,6 @@
+body{
+    font: Arial,Helvetica,sans-serif;
+}
 #container{
     width:1000px;
 /*    border: 10px solid grey;*/
@@ -25,7 +28,8 @@ h1 a{
     width: 400px;
     height: 50px;
     padding: 20px 20px 0 20px;
-    margin-top: 20px
+    margin-top: 20px;
+    border: solid blue;
 }
 .text{
     float: left;
@@ -35,6 +39,7 @@ h1 a{
     color: red;
     background:url(images/downloadl.png) right center;
     background-repeat: no-repeat;
+    border: solid black;
 }
 
 .submit{
@@ -99,14 +104,56 @@ ul{
 }
 .sidebar{
     height: 500px;
-    width: 400px;
+    width: 420px;
     border: 2px solid green;
     border-radius: 20px;
+    padding: 10px 30px;
     
+}
+.sidebar h3{
+    color:purple;
+    font-size: 30px
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5d12e7;
+     -webkit-transition:font-size 0.5s ease;
+    -moz-transition:font-size 0.5s ease;
+    -o-transition:font-size 0.5s ease;
+    -ms-transition:font-size 0.5s ease;
+    transition:font-size 0.5s ease;
+    
+}
+.sidebar ul{
+    padding-top: 8px;
+}
+#leftsidebar ul li{
+    padding-bottom: 5px;
+    padding-left: 20px;
+list-style-image: url(images/arrows.jpg)
+}
+#rightsidebar ul li{
+    padding-bottom: 5px;
+    padding-top: 20px;
+    
+list-style-image: url(images/tick.jpg)
+}
+.sidebar ul li a:hover,.sidebar ul li a.active{
+    text-decoration: none;
+    color: purple;
+    font-size: 23px;
+    font-weight: bold;
 }
 #leftsidebar{
     float: left;
 }
 #rightsidebar{
     float: right;
+}
+.footer{
+    height: 60px;
+    background: linear-gradient(yellow,red);
+    padding: 10px 30px;
+    margin-top:15px; 
 }
